@@ -1,0 +1,171 @@
+[
+    {
+        "_id": 1,
+        "name": "Men 1",
+        "category": "men",
+        "image": "https://i.ibb.co/MRDTpfh/men.jpg",
+        "price": 10.99,
+        "rating": 4.5
+    },
+    {
+        "_id": 2,
+        "name": "Women 2",
+        "category": "women",
+        "image": "https://i.ibb.co/FhXH5YW/women.jpg",
+        "price": 19.99,
+        "rating": 3.8
+    },
+    {
+        "_id": 3,
+        "name": "Product 3",
+        "category": "kids",
+        "image": "https://i.ibb.co/bb8WyLP/kids.webp",
+        "price": 15.99,
+        "rating": 4.2
+    },
+    {
+        "_id": 4,
+        "name": "Mart 4",
+        "category": "mart",
+        "image": "https://i.ibb.co/FhXH5YW/women.jpg",
+        "price": 8.99,
+        "rating": 4.0
+    },
+    {
+        "_id": 5,
+        "name": "Men 5",
+        "category": "men",
+        "image": "https://i.ibb.co/MRDTpfh/men.jpg",
+        "price": 12.99,
+        "rating": 4.7
+    },
+    {
+        "_id": 6,
+        "name": "women 6",
+        "category": "women",
+        "image": "https://i.ibb.co/FhXH5YW/women.jpg",
+        "price": 24.99,
+        "rating": 4.3
+    },
+    {
+        "_id": 7,
+        "name": "Kids 7",
+        "category": "kids",
+        "image": "https://i.ibb.co/bb8WyLP/kids.webp",
+        "price": 14.99,
+        "rating": 4.0
+    },
+    {
+        "_id": 8,
+        "name": "Mart 8",
+        "category": "mart",
+        "image": "https://i.ibb.co/FhXH5YW/women.jpg",
+        "price": 9.99,
+        "rating": 4.2
+    },
+    {
+        "_id": 9,
+        "name": "Men 9",
+        "category": "men",
+        "image": "https://i.ibb.co/MRDTpfh/men.jpg",
+        "price": 11.99,
+        "rating": 4.6
+    },
+    {
+        "_id": 10,
+        "name": "women 10",
+        "category": "women",
+        "image": "https://i.ibb.co/FhXH5YW/women.jpg",
+        "price": 21.99,
+        "rating": 4.1
+    },
+    {
+        "_id": 11,
+        "name": "Kids 11",
+        "category": "kids",
+        "image": "https://i.ibb.co/bb8WyLP/kids.webp",
+        "price": 21.99,
+        "rating": 4.1
+    },
+
+    {
+        "_id": 12,
+        "name": "Mart 12",
+        "category": "mart",
+        "image": "https://i.ibb.co/FhXH5YW/women.jpg",
+        "price": 10.99,
+        "rating": 4.0
+    },
+    {
+        "_id": 13,
+        "name": "Men 13",
+        "category": "men",
+        "image": "https://i.ibb.co/MRDTpfh/men.jpg",
+        "price": 14.99,
+        "rating": 4.3
+    },
+    {
+        "_id": 14,
+        "name": "Women 14",
+        "category": "women",
+        "image": "https://i.ibb.co/FhXH5YW/women.jpg",
+        "price": 26.99,
+        "rating": 3.9
+    },
+    {
+        "_id": 15,
+        "name": "Kids 15",
+        "category": "kids",
+        "image": "https://i.ibb.co/bb8WyLP/kids.webp",
+        "price": 16.99,
+        "rating": 4.1
+    },
+    {
+        "_id": 16,
+        "name": "Mart 16",
+        "category": "mart",
+        "image": "https://i.ibb.co/FhXH5YW/women.jpg",
+        "price": 11.99,
+        "rating": 4.2
+    },
+    {
+        "_id": 17,
+        "name": "Men 17",
+        "category": "men",
+        "image": "https://i.ibb.co/MRDTpfh/men.jpg",
+        "price": 9.99,
+        "rating": 4.7
+    },
+    {
+        "_id": 18,
+        "name": "Women 18",
+        "category": "women",
+        "image": "https://i.ibb.co/FhXH5YW/women.jpg",
+        "price": 23.99,
+        "rating": 4.0
+    },
+    {
+        "_id": 19,
+        "name": "Kids 19",
+        "category": "kids",
+        "image": "https://i.ibb.co/bb8WyLP/kids.webp",
+        "price": 17.99,
+        "rating": 4.5
+    },
+    {
+        "_id": 20,
+        "name": "Mart 20",
+        "category": "mart",
+        "image": "https://i.ibb.co/FhXH5YW/women.jpg",
+        "price": 12.99,
+        "rating": 4.3
+    },
+    {
+        "_id": 21,
+        "name": "Men 21",
+        "category": "men",
+        "image": "https://i.ibb.co/MRDTpfh/men.jpg",
+        "price": 10.99,
+        "rating": 4.6
+    }
+]
