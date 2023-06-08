@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-
+import { FaShoppingCart } from 'react-icons/fa';
+import useCart from "../../hooks/useCart";
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
-
+    const[cart] = useCart(); // custom hook
     const handleLogout = () => {
         logOut()
             .then(() => {})
@@ -21,10 +22,13 @@ const Navbar = () => {
             <li>
                 <Link to="/hotdeals">Hot deals</Link>
             </li>
-
             {user ? (
                 <>
-                    <img src={user?.photo} alt="" />  
+                    <img
+                        src={user?.photoURL                        }
+                        className="rounded-full h-[50px] w-[50px]"
+                        alt=""
+                    />
                     <button onClick={handleLogout} className="btn btn-ghost">
                         Log out
                     </button>
@@ -39,12 +43,20 @@ const Navbar = () => {
                     </li>
                 </>
             )}
+            <li>
+                <Link to='/dashboard/mycart'>
+                    <p className="btn">
+                        <FaShoppingCart></FaShoppingCart>
+                        <div className="badge badge-secondary">+{cart?.length || 0}</div>
+                    </p>
+                </Link>
+            </li>
         </>
     );
 
     return (
         <div>
-            <div className="navbar   bg-base-300">
+            <div className="navbar text-white font-bold bg-orange-500">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -67,16 +79,20 @@ const Navbar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
                         >
-                            {navOptions}
+                            <div className="flex items-center">
+                                {navOptions}
+                            </div>
                         </ul>
                     </div>
                     <a className="btn btn-ghost normal-case text-xl">DOKAN</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">{navOptions}</ul>
+                    <ul className="menu menu-horizontal px-1">
+                        <div className="flex items-center">{navOptions}</div>
+                    </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                  <button className="btn btn-warning">Customer Care</button>
                 </div>
             </div>
         </div>

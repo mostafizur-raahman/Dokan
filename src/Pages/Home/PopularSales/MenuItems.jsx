@@ -7,7 +7,7 @@ const MenuItems = ({ item }) => {
                 <p className="text-xl font-bold">{name}</p>
                 <p>${price}</p>
                 <p>Ratings :{rating}</p>
-                <button className="btn bg-gradient-to-r from-purple-500 to-pink-500 textw">Add to Cart </button>
+                <button className="btn bg-gradient-to-r from-purple-500 to-pink-500 textw"> Add to Cart </button>
             </div>
         </div>
     );

@@ -7,10 +7,11 @@ import {
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
     const [disable, setDisable] = useState(true);
-    const { signIn } = useContext(AuthContext);
+    const { signIn,handleGoogle } = useContext(AuthContext);
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -18,7 +19,10 @@ const Login = () => {
     useEffect(() => {
         loadCaptchaEnginge(6);
     }, []);
-
+    const signInGoogle=()=>{
+        handleGoogle();
+        navigate('/')
+    }
     const handleLogIn = (event) => {
         event.preventDefault();
         const from = event.target;
@@ -53,12 +57,8 @@ const Login = () => {
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex">
                 <div className="text-center lg:text-left w-1/2">
-                    <h1 className="text-5xl font-bold">Login now!</h1>
-                    <p className="py-6">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                        assumenda excepturi exercitationem quasi. In deleniti
-                        eaque aut repudiandae et a id nisi.
-                    </p>
+                    <h1 className="text-5xl font-bold text-center mb-4">Login now!</h1>
+                    <img src='https://i.ibb.co/Dk0W6GX/log.jpg' className="rounded-3xl" alt="" />
                 </div>
                 <div className="card w-1/2 flex-shrink-0  max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={handleLogIn} className="card-body">
@@ -116,6 +116,9 @@ const Login = () => {
                     </form>
                     <div className="text-blue-500 text-center mb-5">
                         <Link to="/signup">new to Dokan Sign up!</Link>
+                    </div>
+                    <div className="ml-20 mb-5 ">
+                        <button onClick={signInGoogle} className=" flex items-center justify-center gap-1 font-bold "> <FaGoogle className="text-2xl text-red-600"></FaGoogle> sign in with Google </button>
                     </div>
                 </div>
             </div>
